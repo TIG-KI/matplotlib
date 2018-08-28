@@ -7,10 +7,13 @@ import matplotlib.pyplot as plt
 x_values = list(range(1,1001))
 y_values = [x**2 for x in x_values]
 
-#表示数据点的颜色可以直接指定名称，也可以传入rgb颜色参数
-#plt.scatter(x_values, y_values, c='red', edgecolors='none', s=40)
-#plt.scatter(x_values, y_values, c=y_values, cmap=plt.cm.Blues, edgecolors='none', s=40)
-#使用颜色映射（colormap）颜色渐变
+"""
+    表示数据点的颜色可以直接指定名称，也可以传入rgb颜色参数
+    plt.scatter(x_values, y_values, c='red', edgecolors='none', s=40)
+    plt.scatter(x_values, y_values, c=y_values, cmap=plt.cm.Blues, 
+    edgecolors='none', s=40)
+    使用颜色映射（colormap）颜色渐变
+"""
 plt.scatter(x_values, y_values, c=y_values, cmap=plt.cm.Blues, 
     edgecolors='none', s=40)
 
